@@ -7,6 +7,8 @@
 body {
     display: flex;
     justify-content: center;
+    color: #202124;
+    background: #fff;
 }
 
 .google {
@@ -14,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid;
     width: 45rem;
     row-gap: 1rem;
 }
@@ -22,7 +23,6 @@ body {
 nav {
     display: flex;
     justify-content: end;
-    border: solid;
     width: 100%;
     gap: 1rem;
     
@@ -33,7 +33,7 @@ nav button {
     height: 1.5rem;
     background: none;
     border: none;
-    font-size: 0.9rem;
+    font-size: 16px;
 
 }
 
@@ -42,67 +42,9 @@ nav button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid;
     width: 100%;
     row-gap: 1rem;
     margin-top: 3rem;
-}
-
-h1 {
-    font-size: clamp(60px, 5vw, 120px);
-    letter-spacing: -0.4rem;
-}
-
-input {
-    max-width: 35rem;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 40px;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    border: solid 1px;
-}
-
-input:hover {
-
-    box-shadow: 0 0 6px 0 #4285F4;
-}
-
-
-
-.end {
-    display: flex;
-    flex-direction: column;
-    border: solid;
-    justify-content: center;
-    align-items: center;
-}
-
-.lesButtons button {
-    background: none;
-    padding: 0.5rem;
-    border-radius: 20px;
-    font-weight: bold;
-    background: rgba(197, 196, 196, 0.352);
-    border: none;
-
-}
-
-.lesButtons button:hover {
-    background: white;
-    color: #34AB53;
-    box-shadow: 0 3px 6px 1px gray;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.exception {
-    list-style: none;
 }
 
 .lettre:nth-child(1) {
@@ -127,6 +69,66 @@ ul {
 
 .lettre:nth-child(6) {
     color: #EA4335;
+}
+
+
+h1 {
+    font-size: 120px;
+    letter-spacing: -0.4rem;
+}
+
+input {
+    max-width: 35rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 40px;
+    font-size: 25px;
+    margin-top: 1rem;
+    border: solid 0.5px;
+}
+
+input:hover {
+
+    box-shadow: 0 0 4px 3px rgb(184, 210, 255);
+}
+
+
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesButtons button {
+    background: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    background: rgba(197, 196, 196, 0.352);
+    border: none;
+
+}
+
+.lesButtons button:hover {
+    background: #f1f3f4;
+    color: #34AB53;
+    box-shadow: 0 3px 6px 1px gray;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: #70757a;
+}
+.exception {
+    list-style: none;
 }
 
 @media (max-width: 768px){
