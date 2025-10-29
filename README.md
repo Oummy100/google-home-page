@@ -22,6 +22,86 @@ Structure HTML correcte
 
  Code propre et indenté
 
+ ## Ma structure
+
+ ````
+BODY
+└── MAIN
+    ├── NAV
+    │   ├── BUTTON.button2 ("Gmail")
+    │   └── BUTTON ("Images")
+    │
+    ├── SECTION.milieu
+    │   ├── H1
+    │   │   ├── SPAN.lettre ("G")
+    │   │   ├── SPAN.lettre ("o")
+    │   │   ├── SPAN.lettre ("o")
+    │   │   ├── SPAN.lettre ("g")
+    │   │   ├── SPAN.lettre ("l")
+    │   │   └── SPAN.lettre ("e")
+    │   ├── INPUT[type="text"] (placeholder: "🔍  Search")
+    │   └── DIV.lesButtons
+    │       ├── BUTTON ("Recherche Google")
+    │       └── BUTTON ("J'ai de la chance")
+    │
+    └── SECTION.end
+        ├── P ("Sadoré - Say - Tillabery")
+        └── UL
+            ├── LI.exception > A ("Confidentialité")
+            ├── LI > A ("Conditions")
+            └── LI > A ("Parametres")
+````
+
+### Les proprétés css
+
+--Flexbox :
+
+display: flex + flex-direction pour aligner et empiler les éléments facilement.
+
+justify-content et align-items permettent le centrage horizontal et vertical.
+
+--Responsive :
+
+width, max-width et media queries pour que le contenu s’adapte aux écrans de toutes tailles.
+
+Ajuster font-size, padding, gap pour lisibilité sur mobile et tablette.
+
+--Espacement et alignement :
+
+margin, row-gap, gap pour espacer les éléments sans casser le layout.
+
+Éviter les DIV inutiles, utiliser flex pour le placement.
+
+--Boutons et interactivité :
+
+padding + border-radius pour un style moderne.
+
+:hover avec background, color ou box-shadow pour retour visuel.
+
+--Typographie et logo :
+
+Taille (font-size) et espacement (letter-spacing) pour mettre en valeur les titres.
+
+Couleur spécifique par lettre pour effet “logo type Google”.
+
+--Champs de formulaire (input) :
+
+Largeur responsive (width, max-width) + padding confortable.
+
+Bord arrondi (border-radius) et ombre (box-shadow) pour l’effet visuel au survol.
+
+--Listes et liens :
+
+Flex pour menus horizontaux.
+
+Supprimer les puces et le soulignement pour un look moderne (list-style: none, text-decoration: none).
+
+--Media Queries :
+
+Ajuster tout ce qui touche à la taille, au spacing et aux boutons selon la largeur de l’écran.
+
+Essentiel pour que le design reste propre sur mobile et tablette.
+
  ### Ecran 1440px
 
  ![image du responsive](image1.png)
