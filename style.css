@@ -34,6 +34,7 @@ nav button {
     background: none;
     border: none;
     font-size: 16px;
+    cursor: pointer;
 
 }
 
@@ -94,9 +95,9 @@ input {
     border: solid 0.5px;
 }
 
-input:hover {
-
-    box-shadow: 0 0 4px 3px rgb(184, 210, 255);
+input:focus {
+    box-shadow: 0 0 2px 3px rgb(181, 208, 255);
+    outline: 1px;
 }
 
 
@@ -108,12 +109,13 @@ input:hover {
     align-items: center;
 }
 
+
 .lesButtons button {
     background: none;
     padding: 0.5rem;
     border-radius: 20px;
     font-weight: bold;
-    background: rgba(197, 196, 196, 0.352);
+    background: white;
     border: none;
 
 }
@@ -121,6 +123,7 @@ input:hover {
 .lesButtons button:hover {
     color: #34AB53;
     box-shadow: 0 3px 6px 1px gray;
+    cursor: pointer;
 }
 
 ul {
@@ -131,7 +134,7 @@ ul {
 }
 a{
     text-decoration: none;
-    color: #70757a;
+    color: black;
 }
 .exception {
     list-style: none;
