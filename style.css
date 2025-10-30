@@ -117,6 +117,7 @@ input:focus {
     font-weight: bold;
     background: white;
     border: none;
+    background: rgb(238, 238, 238);
 
 }
 
@@ -124,6 +125,7 @@ input:focus {
     color: #34AB53;
     box-shadow: 0 3px 6px 1px gray;
     cursor: pointer;
+    background: white;
 }
 
 ul {
@@ -152,6 +154,7 @@ nav{
 
     .end{
         font-size: 0.8rem;
+        color: black;
     }
  input{
     
